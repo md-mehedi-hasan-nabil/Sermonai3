@@ -731,7 +731,7 @@
     </section>
 
     <section
-      class="position-relative"
+      class="position-relative client-feedback-section"
       style="background-color: #061551; padding: 5rem 0"
     >
       <div class="container">
@@ -924,7 +924,7 @@
     </footer>
 
     <section
-      class="position-relative pt-4 pb-2"
+      class="position-relative pt-4 pb-2 footer-section"
       style="background-color: #061551"
     >
       <div class="d-flex justify-content-center gap-3">
@@ -956,10 +956,10 @@
       <div class="side-indicator-button"></div>
       <div class="side-indicator-button"></div>
       <div class="side-indicator-button"></div>
+      <div class="side-indicator-button client-feedback-indicator-button"></div>
       <div class="side-indicator-button"></div>
       <div class="side-indicator-button"></div>
-      <div class="side-indicator-button"></div>
-      <div class="side-indicator-button"></div>
+      <div class="side-indicator-button footer-indicator-button"></div>
     </div>
 
     <script
@@ -983,17 +983,48 @@
         }
       });
 
-      const sideIndicator = document.querySelector(".side-indicator");
+      const clientFeedbackSection = document.querySelector(
+        ".client-feedback-section"
+      );
+      const clientFeedbackIndicatorButton = document.querySelector(
+        ".client-feedback-indicator-button"
+      );
 
-      let observer = new IntersectionObserver((items) => {
+      const footerSection = document.querySelector(".footer-section");
+      const footerIndicatorButton = document.querySelector(
+        ".footer-indicator-button"
+      );
+
+      const observer1 = new IntersectionObserver((items) => {
         items.forEach((item) => {
           if (item.isIntersecting) {
-            console.log(items.target + " is visible");
+            console.log(item.target.className);
+
+            if (item.target.className.includes("client-feedback-section")) {
+              clientFeedbackIndicatorButton.style.background = "#fff";
+            }
+          } else {
+            clientFeedbackIndicatorButton.style.background = "transparent";
           }
         });
-      }, sideIndicator);
+      });
 
-      observer.observe(sideIndicator);
+      observer1.observe(clientFeedbackSection);
+
+      const observer2 = new IntersectionObserver((items) => {
+        items.forEach((item) => {
+          if (item.isIntersecting) {
+            console.log(item.target.className);
+
+            if (item.target.className.includes("footer-section")) {
+              footerIndicatorButton.style.background = "#fff";
+            }
+          } else {
+            footerIndicatorButton.style.background = "transparent";
+          }
+        });
+      });
+      observer2.observe(footerSection);
     </script>
   </body>
 </html>
