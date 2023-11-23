@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
 
+html {
+    overflow-x: hidden;
+}
 
 body {
     font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
 }
 
 .bg-blue {
     background-color: #061551;
-    color: #fff;
+    color: #fff !important;
 }
 
 .text-blue {
@@ -21,7 +25,7 @@ body {
 
 .hero {
     position: relative;
-    background-color: rgb(6, 21, 81, 0.75);
+    background-color: rgb(6, 21, 81, 0.7);
     margin-top: -5px;
 }
 
@@ -86,7 +90,7 @@ body {
     margin-bottom: 1.8rem;
 }
 
-.client-feedback-indicator{
+.client-feedback-indicator {
     width: 0.3rem !important;
     height: 0.3rem !important;
     border: 3px solid white !important;
@@ -102,4 +106,36 @@ body {
     background-size: cover;
     box-shadow: inset 0 0 0 2000px rgb(6, 21, 81, 0.85);
     background-attachment: fixed;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: none;
+    background-color: #854dff;
+    padding: 0.6rem;
+    transform: rotate(180deg);
+}
+
+
+.service-content {
+    margin-top: -21rem
+}
+
+
+@media (max-width: 576px) {
+    .service-content {
+        margin-top: -11rem
+    }
+
+    .digital-book-image {
+        width: 75% !important;
+        margin-bottom: 5rem !important;
+        margin: 0 auto;
+    }
+
 }
