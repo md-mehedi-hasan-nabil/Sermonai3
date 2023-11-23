@@ -36,14 +36,11 @@
           <ul class="navbar-nav ms-auto gap-3 mb-2 mb-lg-0">
             <form class="d-flex" role="search">
               <input
-                class="form-control me-2"
+                class="search-input form-control me-2"
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
               />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
             </form>
             <li class="nav-item">
               <a class="nav-link text-white fw-bold active" href="#">Home</a>
@@ -679,12 +676,12 @@
               <div class="text-center position-relative">
                 <p class="fw-medium text-white">Pastor James C Boyd Jr.</p>
                 <div class="client-name-bar"></div>
-                <h3 class="text-white fw-bold lh-base">
+                <h3 class="text-white fw-bold lh-base client-feedback-message">
                   ​"I admit I was skeptical about using <br />
                   SermonAi, I gave it a try and it was so <br />
                   helpful...this is a good tool to use."
                 </h3>
-                <div class="mt-5 mb-2">
+                <div class="mb-2">
                   <button class="btn">Talk to Pastor James</button>
                 </div>
               </div>
@@ -693,14 +690,14 @@
               <div class="text-center position-relative">
                 <p class="fw-medium text-white">Pastor John Harrison</p>
                 <div class="client-name-bar"></div>
-                <h3 class="text-white fw-bold lh-base">
+                <h3 class="text-white fw-bold lh-base client-feedback-message">
                   “After less than one week, this program is my<br />
                   new best friend. I have tried the delivery <br />
                   mode and it works perfectly. I can time my <br />
                   sermons to the minute and add and delete <br />
                   where necessary.”
                 </h3>
-                <div class="mt-5 mb-2">
+                <div class="mb-2">
                   <button class="btn">Talk to Pastor John</button>
                 </div>
               </div>
@@ -709,12 +706,12 @@
               <div class="text-center position-relative">
                 <p class="fw-medium text-white">Fr Chris Nerreau</p>
                 <div class="client-name-bar"></div>
-                <h3 class="text-white fw-bold lh-base">
+                <h3 class="text-white fw-bold lh-base client-feedback-message">
                   ​"SermonAi Streamlines sermon preparation <br />
                   with its comprehensive outline tools and <br />
                   research resources."
                 </h3>
-                <div class="mt-5 mb-2">
+                <div class="mb-2">
                   <button class="btn">Talk to Fr Chris</button>
                 </div>
               </div>
@@ -730,8 +727,8 @@
     >
       <div class="container" style="max-width: 756px">
         <h5 class="fw-bold" style="color: #854dff">
-          <span
-            ><svg
+          <span>
+            <svg
               width="30"
               fill="#854dff"
               preserveAspectRatio="xMidYMid meet"
@@ -745,8 +742,10 @@
                 <path
                   d="M30 1.9C14.5 1.9 1.9 14.5 1.9 30c0 15.5 12.6 28.1 28.1 28.1S58.1 45.5 58.1 30C58.1 14.5 45.5 1.9 30 1.9zm0 44c-8.8 0-15.9-7.1-15.9-15.9S21.2 14.1 30 14.1 45.9 21.2 45.9 30 38.8 45.9 30 45.9z"
                 ></path>
-              </g></svg
-          ></span>
+              </g>
+            </svg>
+          </span>
+
           <span class="ps-2">7-DAY FREE TRIAL</span>
         </h5>
         <h3 class="text-white fw-bold fs-1 lh-base">
@@ -836,7 +835,9 @@
       const footer = document.querySelector("footer");
 
       document.addEventListener("scroll", (e) => {
-        footer.style.backgroundPosition = `0px ${-(window.scrollY / 10)+500}px`;
+        footer.style.backgroundPosition = `0px ${
+          -(window.scrollY / 10) + 500
+        }px`;
       });
     </script>
   </body>
