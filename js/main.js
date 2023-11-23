@@ -40,6 +40,7 @@ const observer2 = new IntersectionObserver((items) => {
   items.forEach((item) => {
     if (item.isIntersecting) {
       if (item.target.className.includes("footer-section")) {
+        resetIndicatorButtonStyle()
         footerIndicatorButton.style.background = "#fff";
       }
     } else {
@@ -50,18 +51,18 @@ const observer2 = new IntersectionObserver((items) => {
 
 observer2.observe(footerSection);
 
-
-
-function move(element, y) {
+function resetIndicatorButtonStyle() {
   const sideIndicatorButton = document.querySelectorAll(
     ".side-indicator-button"
   );
   Array.from(sideIndicatorButton).forEach((button) => {
     button.style.background = "transparent";
   });
+}
+
+function move(element, y) {
+  resetIndicatorButtonStyle();
   element.style.background = "#fff";
 
   window.scrollTo(0, y);
 }
-
-
