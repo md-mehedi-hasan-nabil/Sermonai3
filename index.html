@@ -131,7 +131,11 @@
             in Sermon Research,<br />
             Writing and Delivery.
           </h2>
-          <p data-aos="fade-up"  data-aos-duration="2000" class="mt-4 text-white">
+          <p
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            class="mt-4 text-white"
+          >
             Empowering pastors to create impactful sermons with ease and
             precision.
           </p>
@@ -849,7 +853,7 @@
 
           <span class="ps-2">7-DAY FREE TRIAL</span>
         </h5>
-        <h3 data-aos="fade-up"  class="text-white fw-bold fs-1 lh-base">
+        <h3 data-aos="fade-up" class="text-white fw-bold fs-1 lh-base">
           Discover how SermonAi can <br />
           transform your sermon prep with a <br />
           FREE 7-day trial—embrace
@@ -948,6 +952,16 @@
       </svg>
     </a>
 
+    <div class="side-indicator-container">
+      <div class="side-indicator-button"></div>
+      <div class="side-indicator-button"></div>
+      <div class="side-indicator-button"></div>
+      <div class="side-indicator-button"></div>
+      <div class="side-indicator-button"></div>
+      <div class="side-indicator-button"></div>
+      <div class="side-indicator-button"></div>
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
@@ -955,7 +969,7 @@
     ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-      AOS.init({ once: false , duration: 800});
+      AOS.init({ once: true, duration: 800 });
 
       const footer = document.querySelector("footer");
 
@@ -968,6 +982,18 @@
           }px`;
         }
       });
+
+      const sideIndicator = document.querySelector(".side-indicator");
+
+      let observer = new IntersectionObserver((items) => {
+        items.forEach((item) => {
+          if (item.isIntersecting) {
+            console.log(items.target + " is visible");
+          }
+        });
+      }, sideIndicator);
+
+      observer.observe(sideIndicator);
     </script>
   </body>
 </html>
