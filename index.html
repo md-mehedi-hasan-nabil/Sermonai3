@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Home | Sermonai3</title>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-blue position-sticky top-0"
+      style="z-index: 10"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">
+          <img style="height: 3.5rem" src="./assets/logo.webp" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto gap-3 mb-2 mb-lg-0">
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+            <li class="nav-item">
+              <a class="nav-link text-white fw-bold active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fw-bold" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fw-bold">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fw-bold">Login</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <video class="hero-video" autoplay muted loop id="video">
+      <source src="./assets/hero-area-bg.mp4" type="video/mp4" />
+      Your browser does not support HTML5 video.
+    </video>
+
+    <section class="hero">
+      <div class="container pb-5">
+        <div class="text-center">
+          <h2 class="fw-bold display-4 text-white" style="padding-top: 8rem">
+            Unleash the Power of AI <br />
+            in Sermon Research,<br />
+            Writing and Delivery.
+          </h2>
+          <p class="mt-4 text-white">
+            Empowering pastors to create impactful sermons with ease and
+            precision.
+          </p>
+        </div>
+        <div
+          id="carouselExample"
+          class="carousel slide"
+          style="margin-bottom: 2rem"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./assets/slider1.webp"
+                class="d-block w-75 mx-auto"
+                alt="slider1"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/slider2.webp"
+                class="d-block w-75 mx-auto"
+                alt="slider2"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="bg-white py-5" style="margin-top: -20rem">
+        <div class="container text-center" style="padding-top: 12rem">
+          <button
+            class="btn"
+            style="margin-top: -3rem; transform: translateZ(10px)"
+          >
+            Get Started
+          </button>
+
+          <div class="row" style="margin-top: 8rem; padding-bottom: 5rem">
+            <div class="col-12 col-md-3">
+              <div class="text-center">
+                <svg
+                  style="fill: #854dff"
+                  preserveAspectRatio="xMidYMid meet"
+                  data-bbox="36 36 128 127.999"
+                  viewBox="36 36 128 127.999"
+                  height="45"
+                  width="45"
+                  xmlns="http://www.w3.org/2000/svg"
+                  data-type="shape"
+                  role="presentation"
+                  aria-hidden="true"
+                  aria-label=""
+                >
+                  <g>
+                    <path
+                      d="m162.828 157.171-26.254-26.254c8.766-10.072 14.093-23.214 14.093-37.584C150.667 61.72 124.947 36 93.333 36 61.72 36 36 61.72 36 93.333s25.72 57.333 57.333 57.333c14.37 0 27.512-5.326 37.584-14.092l26.254 26.254c.78.781 1.805 1.171 2.828 1.171s2.048-.391 2.828-1.171a3.998 3.998 0 0 0 .001-5.657zM44 93.333C44 66.131 66.131 44 93.333 44c27.203 0 49.334 22.131 49.334 49.333 0 13.481-5.441 25.712-14.235 34.626-.086.072-.179.131-.26.212-.081.081-.14.174-.212.259-8.914 8.795-21.145 14.236-34.627 14.236C66.131 142.667 44 120.536 44 93.333z"
+                    ></path>
+                  </g>
+                </svg>
+                <h4 class="fs-4 fw-bold mt-3 mb-4" style="color: #5933aa">
+                  Research
+                </h4>
+                <p>
+                  SermonAi's research assistant <br />
+                  greatly assists pastors by <br />
+                  swiftly providing answers to <br />
+                  biblical, historical, and <br />
+                  theological questions. It <br />
+                  simplifies sermon preparation <br />
+                  with customizable outlines <br />
+                  and a diverse suite of biblical <br />
+                  research tools.
+                </p>
+                <button class="btn" style="margin-top: 3rem">
+                  Watch Video
+                </button>
+              </div>
+            </div>
+            <div class="col-12 col-md-3">
+              <div class="text-center">
+                <svg
+                  style="fill: #854dff"
+                  preserveAspectRatio="xMidYMid meet"
+                  data-bbox="29.5 36 141 128"
+                  viewBox="29.5 36 141 128"
+                  height="45"
+                  width="45"
+                  xmlns="http://www.w3.org/2000/svg"
+                  data-type="shape"
+                  role="presentation"
+                  aria-hidden="true"
+                  aria-label=""
+                >
+                  <g>
+                    <path
+                      d="M166.5 36h-39.9c-11.385 0-21.33 6.268-26.6 15.536C94.73 42.268 84.785 36 73.4 36H33.5a4 4 0 0 0-4 4v100a4 4 0 0 0 4 4h46.55c8.795 0 15.95 7.178 15.95 16a4 4 0 0 0 8 0c0-8.822 7.155-16 15.95-16h46.55a4 4 0 0 0 4-4V40a4 4 0 0 0-4-4zM96 142.111C91.762 138.312 86.17 136 80.05 136H37.5V44h35.9C85.862 44 96 54.168 96 66.667v75.444zM162.5 136h-42.55c-6.12 0-11.712 2.312-15.95 6.111V66.667C104 54.168 114.138 44 126.6 44h35.9v92z"
+                    ></path>
+                  </g>
+                </svg>
+                <h4 class="fs-4 fw-bold mt-3 mb-4" style="color: #5933aa">
+                  Write
+                </h4>
+                <p>
+                  SermonAi's research assistant <br />
+                  greatly assists pastors by <br />
+                  swiftly providing answers to <br />
+                  biblical, historical, and <br />
+                  theological questions. It <br />
+                  simplifies sermon preparation <br />
+                  with customizable outlines <br />
+                  and a diverse suite of biblical <br />
+                  research tools.
+                </p>
+                <button class="btn" style="margin-top: 3rem">
+                  Watch Video
+                </button>
+              </div>
+            </div>
+            <div class="col-12 col-md-3">
+              <div class="text-center">
+                <svg
+                  style="fill: #854dff"
+                  preserveAspectRatio="xMidYMid meet"
+                  data-bbox="43 29.5 114 141"
+                  viewBox="43 29.5 114 141"
+                  height="45"
+                  width="45"
+                  xmlns="http://www.w3.org/2000/svg"
+                  data-type="shape"
+                  role="presentation"
+                  aria-hidden="true"
+                  aria-label=""
+                >
+                  <g>
+                    <path
+                      d="M153 29.5H63.562C52.225 29.5 43 38.752 43 50.125v99.75c0 11.373 9.225 20.625 20.562 20.625H153a4 4 0 0 0 4-4v-133a4 4 0 0 0-4-4zm-89.438 8H149v91.75H63.562c-4.732 0-9.084 1.628-12.562 4.333V50.125C51 43.164 56.636 37.5 63.562 37.5zm0 125C56.636 162.5 51 156.836 51 149.875s5.636-12.625 12.562-12.625H149v25.25H63.562z"
+                    ></path>
+                  </g>
+                </svg>
+                <h4 class="fs-4 fw-bold mt-3 mb-4" style="color: #5933aa">
+                  Organize
+                </h4>
+                <p>
+                  SermonAi's research assistant <br />
+                  greatly assists pastors by <br />
+                  swiftly providing answers to <br />
+                  biblical, historical, and <br />
+                  theological questions. It <br />
+                  simplifies sermon preparation <br />
+                  with customizable outlines <br />
+                  and a diverse suite of biblical <br />
+                  research tools.
+                </p>
+                <button class="btn" style="margin-top: 3rem">
+                  Watch Video
+                </button>
+              </div>
+            </div>
+            <div class="col-12 col-md-3">
+              <div class="text-center">
+                <svg
+                  style="fill: #854dff"
+                  preserveAspectRatio="xMidYMid meet"
+                  data-bbox="33.2 45.553 134.956 101.862"
+                  viewBox="33.2 45.553 134.956 101.862"
+                  height="45"
+                  width="45"
+                  xmlns="http://www.w3.org/2000/svg"
+                  data-type="shape"
+                  role="presentation"
+                  aria-hidden="true"
+                  aria-label=""
+                >
+                  <g>
+                    <path
+                      d="M84.116 86.193a7.421 7.421 0 1 1-5.68 13.712 7.421 7.421 0 0 1 5.68-13.712z"
+                    ></path>
+                    <path
+                      d="M111.488 91.864a7.421 7.421 0 1 1-14.65 2.376 7.421 7.421 0 0 1 14.65-2.376z"
+                    ></path>
+                    <path
+                      d="M129.885 86.193a7.421 7.421 0 1 1-5.68 13.712 7.421 7.421 0 0 1 5.68-13.712z"
+                    ></path>
+                    <path
+                      d="M103.287 45.553c-35.77 0-64.87 21.343-64.87 47.577 0 8.399 2.978 16.583 8.632 23.782L33.2 147.415l33.919-14.751c10.7 5.267 23.172 8.044 36.168 8.044 35.769 0 64.869-21.343 64.869-47.577s-29.101-47.578-64.869-47.578zm0 89.154c-12.564 0-24.562-2.773-34.693-8.021l-1.268-.656-22.214 9.661 8.96-19.734-1.239-1.451c-5.506-6.447-8.416-13.84-8.416-21.376 0-22.926 26.409-41.577 58.87-41.577s58.869 18.651 58.869 41.577-26.408 41.577-58.869 41.577z"
+                    ></path>
+                  </g>
+                </svg>
+                <h4 class="fs-4 fw-bold mt-3 mb-4" style="color: #5933aa">
+                  Preach
+                </h4>
+                <p>
+                  SermonAi's research assistant <br />
+                  greatly assists pastors by <br />
+                  swiftly providing answers to <br />
+                  biblical, historical, and <br />
+                  theological questions. It <br />
+                  simplifies sermon preparation <br />
+                  with customizable outlines <br />
+                  and a diverse suite of biblical <br />
+                  research tools.
+                </p>
+                <button class="btn" style="margin-top: 3rem">
+                  Watch Video
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="position-relative py-5" style="background-color: #f2f7ff">
+      <div class="container" style="max-width: 54rem">
+        <div>
+          <h3 class="text-center display-6 fw-bold pb-3">
+            Your Ethical AI Platform for Sermon <br />
+            Prep
+          </h3>
+          <p class="lh-lg">
+            In a world where technology increasingly intersects with every
+            aspect of life, the realm of sermon preparation <br />
+            is no exception. At SermonAi, we recognize that while some may seek
+            shortcuts in crafting their messages,<br /><span
+              class="fw-bold text-blue"
+              >our focus is on empowering those who hold the dignity of the
+              pastoral office in high esteem and are <br />
+              dedicated to delivering authentic, biblically grounded
+              sermons.</span
+            >
+          </p>
+        </div>
+
+        <div class="row mt-5 align-items-center">
+          <div class="col-12 col-md-6 text-center">
+            <img class="w-75" src="./assets/slider1.webp" alt="slider1" />
+          </div>
+          <div class="col-12 col-md-6">
+            <h4 class="display-6 fw-bold">
+              A Tool for the <br />
+              Thoughtful <br />
+              Pastor
+            </h4>
+            <p class="lh-lg">
+              SermonAi is specifically designed for <br />
+              pastors who cherish the integrity of their <br />
+              calling.
+              <span class="text-blue fw-bold"
+                >It's not a "push button" solution <br />
+                for uninspired sermon writing.</span
+              >
+              Instead,<br />
+              it's a sophisticated research and writing <br />
+              assistant that helps bring the message <br />
+              God has placed in your heart into a tangible, preachable form.
+            </p>
+          </div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6">
+            <h4 class="display-6 fw-bold">
+              Setting a New <br />
+              Standard in AI- <br />
+              Assisted Sermon <br />
+              Writing
+            </h4>
+            <p class="lh-lg">
+              <span class="text-blue fw-bold"
+                >Our mission at SermonAi is to be the <br />
+                premier motivator for responsible <br />
+                and ethical AI use in sermon <br />
+                preparation.</span
+              >
+              We strive to set ourselves <br />
+              apart from competitors that may <br />
+              promote effortless sermon creation. <br />
+              With SermonAi, the goal is to enhance, <br />
+              not replace, the personal touch and <br />
+              deep spiritual insight that only a <br />
+              dedicated pastor can provide.
+            </p>
+          </div>
+          <div class="col-12 col-md-6 text-center">
+            <img class="w-75" src="./assets/ipad.png" alt="slider1" />
+            <button
+              class="btn"
+              style="padding-left: 4rem; padding-right: 4rem; margin-top: 8rem"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="position-relative"
+      style="background-color: #5933aa; padding-bottom: 2rem"
+    >
+      <div class="container">
+        <div class="row" style="padding: 5rem 0">
+          <div class="col-12 col-md-6">
+            <img
+              class="img-fluid"
+              src="./assets/ipad with books.png"
+              alt="ipad with books"
+              style="transform: rotate(331deg); width: 90%"
+            />
+          </div>
+          <div class="col-12 col-md-6">
+            <h4 class="display-6 fw-bold text-white">Digital Books Meet AI</h4>
+            <div class="lh-lg text-white" style="width: fit-content">
+              Pastors invest heartily in their digital libraries, and SermonAi
+              <br />
+              honors that investment. Create and upload your personal <br />
+              books with ease. For your valued <span>Kindle</span> or
+              <span>Logos</span> <br />
+              collections, enjoy instant access at the click of a button. It’s
+              <br />
+              your wealth of resources and our AI, together on one platform.
+              <div class="text-center" style="margin-top: 4rem">
+                <button class="digital-book-btn">SEE IT IN ACTION</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="position-relative"
+      style="background-color: #061551; padding: 5rem 0"
+    >
+      <div class="container" style="max-width: 756px">
+        <div
+          id="clientFeedback"
+          class="carousel slide pb-4"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators" style="bottom: -2.5rem">
+            <button
+              type="button"
+              data-bs-target="#clientFeedback"
+              data-bs-slide-to="0"
+              class="client-feedback-indicator active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#clientFeedback"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+              class="client-feedback-indicator"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#clientFeedback"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+              class="client-feedback-indicator"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="text-center position-relative">
+                <p class="fw-medium text-white">Pastor James C Boyd Jr.</p>
+                <div class="client-name-bar"></div>
+                <h3 class="text-white fw-bold lh-base">
+                  ​"I admit I was skeptical about using <br />
+                  SermonAi, I gave it a try and it was so <br />
+                  helpful...this is a good tool to use."
+                </h3>
+                <div class="mt-5">
+                  <button class="btn">Talk to Pastor James</button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="text-center position-relative">
+                <p class="fw-medium text-white">Pastor John Harrison</p>
+                <div class="client-name-bar"></div>
+                <h3 class="text-white fw-bold lh-base">
+                  “After less than one week, this program is my<br />
+                  new best friend. I have tried the delivery <br />
+                  mode and it works perfectly. I can time my <br />
+                  sermons to the minute and add and delete <br />
+                  where necessary.”
+                </h3>
+                <div class="mt-5">
+                  <button class="btn">Talk to Pastor John</button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="text-center position-relative">
+                <p class="fw-medium text-white">Fr Chris Nerreau</p>
+                <div class="client-name-bar"></div>
+                <h3 class="text-white fw-bold lh-base">
+                  ​"SermonAi Streamlines sermon preparation <br />
+                  with its comprehensive outline tools and <br />
+                  research resources."
+                </h3>
+                <div class="mt-5">
+                  <button class="btn">Talk to Fr Chris</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="position-relative"
+      style="background-color: #110035; padding: 8rem 0"
+    >
+      <div class="container" style="max-width: 756px;">
+        <h3 class="text-white fw-bold fs-1 lh-base">
+          Discover how SermonAi can <br />
+          transform your sermon prep with a <br />
+          FREE 7-day trial—embrace innovation, enhance <br />
+          your sermons, <br />
+          inspire your congregation.
+        </h3>
+        <div class="text-center" style="margin-top: 5rem;">
+            <button class="btn">Get Started</button>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

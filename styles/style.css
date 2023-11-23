@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,700;1,800;1,900&display=swap');
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+.bg-blue {
+    background-color: #061551;
+    color: #fff;
+}
+
+.text-blue {
+    color: #854dff;
+}
+
+.navbar-nav .nav-item a:hover {
+    color: #854dff !important;
+    transition: 0.5s;
+}
+
+.hero {
+    position: relative;
+    background-color: rgb(6, 21, 81, 0.75);
+    margin-top: -5px;
+}
+
+.hero-video {
+    position: fixed;
+    top: 5rem;
+    left: 0;
+    width: max-content;
+    height: fit-content;
+    z-index: 0;
+}
+
+.btn {
+    background-color: #854dff;
+    font-weight: bold;
+    padding: 0.7rem 2.5rem;
+    color: #fff;
+    border-radius: 3rem;
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 1px 1px #b6e8e3;
+    background-color: #fff;
+}
+
+.btn:active {
+    box-shadow: 0px 0px 1px 2px #b6e8e3;
+    outline: none;
+    border: none;
+}
+
+.digital-book-btn {
+    border: none;
+    outline: none;
+    padding: 0.7rem 1.1rem;
+    background-color: #1657d9;
+    font-weight: 500;
+    border-radius: 3rem;
+    color: #fff;
+    box-shadow: 0px 0px 6px 2px #6830b5;
+}
+
+.digital-book-btn:hover {
+    background-color: #fff;
+    color: #333;
+    transition: 0.5s;
+}
+
+.digital-book-btn:active {
+    background-color: #fff;
+    color: #333;
+    transition: 0.5s;
+    box-shadow: 0px 0px 6px 4px #6830b5;
+}
+
+.client-name-bar {
+    margin: 0 auto;
+    width: 60px;
+    height: 1px;
+    background-color: #fff;
+    margin-bottom: 1.8rem;
+}
+
+.client-feedback-indicator{
+    width: 0.3rem !important;
+    height: 0.3rem !important;
+    border: 3px solid white !important;
+    background-color: transparent !important;
+    border-radius: 50%;
+}
