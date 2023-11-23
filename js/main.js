@@ -50,10 +50,18 @@ const observer2 = new IntersectionObserver((items) => {
 
 observer2.observe(footerSection);
 
-function move(x, y) {
-  window.scrollTo(x, y);
+
+
+function move(element, y) {
+  const sideIndicatorButton = document.querySelectorAll(
+    ".side-indicator-button"
+  );
+  Array.from(sideIndicatorButton).forEach((button) => {
+    button.style.background = "transparent";
+  });
+  element.style.background = "#fff";
+
+  window.scrollTo(0, y);
 }
 
-window.addEventListener("scroll", function (e) {
-  console.log(this.window.scrollY);
-});
+
