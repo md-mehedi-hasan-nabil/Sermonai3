@@ -9,6 +9,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Home | Sermonai3</title>
   </head>
@@ -120,12 +121,17 @@
               </g>
             </svg>
           </div>
-          <h2 class="fw-bold display-4 text-white" style="padding-top: 8rem">
+          <h2
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            class="fw-bold display-4 text-white"
+            style="padding-top: 8rem"
+          >
             Unleash the Power of AI <br />
             in Sermon Research,<br />
             Writing and Delivery.
           </h2>
-          <p class="mt-4 text-white">
+          <p data-aos="fade-up"  data-aos-duration="2000" class="mt-4 text-white">
             Empowering pastors to create impactful sermons with ease and
             precision.
           </p>
@@ -250,6 +256,8 @@
             <div class="carousel-item active">
               <img
                 src="./assets/slider1.png"
+                data-aos="fade-up"
+                data-aos-duration="1000"
                 class="d-block mx-auto"
                 style="width: 70%"
                 alt="slider1"
@@ -258,6 +266,8 @@
             <div class="carousel-item">
               <img
                 src="./assets/slider2.png"
+                data-aos="fade-up"
+                data-aos-duration="1000"
                 class="d-block mx-auto"
                 style="width: 70%"
                 alt="slider2"
@@ -723,7 +733,7 @@
       <div class="container">
         <div
           id="clientFeedback"
-          class="carousel slide pb-4"
+          class="carousel slide carousel-fade pb-4"
           data-bs-ride="carousel"
         >
           <div class="carousel-indicators" style="bottom: -2.5rem">
@@ -839,7 +849,7 @@
 
           <span class="ps-2">7-DAY FREE TRIAL</span>
         </h5>
-        <h3 class="text-white fw-bold fs-1 lh-base">
+        <h3 data-aos="fade-up"  class="text-white fw-bold fs-1 lh-base">
           Discover how SermonAi can <br />
           transform your sermon prep with a <br />
           FREE 7-day trial—embrace
@@ -943,7 +953,10 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
+      AOS.init({ once: false , duration: 800});
+
       const footer = document.querySelector("footer");
 
       document.addEventListener("scroll", (e) => {
