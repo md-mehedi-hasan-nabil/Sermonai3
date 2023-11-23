@@ -17,11 +17,6 @@ const clientFeedbackIndicatorButton = document.querySelector(
   ".client-feedback-indicator-button"
 );
 
-const footerSection = document.querySelector(".footer-section");
-const footerIndicatorButton = document.querySelector(
-  ".footer-indicator-button"
-);
-
 const observer1 = new IntersectionObserver((items) => {
   items.forEach((item) => {
     if (item.isIntersecting) {
@@ -36,6 +31,11 @@ const observer1 = new IntersectionObserver((items) => {
 
 observer1.observe(clientFeedbackSection);
 
+const footerSection = document.querySelector(".footer-section");
+const footerIndicatorButton = document.querySelector(
+  ".footer-indicator-button"
+);
+
 const observer2 = new IntersectionObserver((items) => {
   items.forEach((item) => {
     if (item.isIntersecting) {
@@ -49,3 +49,11 @@ const observer2 = new IntersectionObserver((items) => {
 });
 
 observer2.observe(footerSection);
+
+function move(x, y) {
+  window.scrollTo(x, y);
+}
+
+window.addEventListener("scroll", function (e) {
+  console.log(this.window.scrollY);
+});
