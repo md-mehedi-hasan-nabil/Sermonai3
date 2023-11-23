@@ -17,17 +17,22 @@ const clientFeedbackIndicatorButton = document.querySelector(
   ".client-feedback-indicator-button"
 );
 
-const observer1 = new IntersectionObserver((items) => {
-  items.forEach((item) => {
-    if (item.isIntersecting) {
-      if (item.target.className.includes("client-feedback-section")) {
-        clientFeedbackIndicatorButton.style.background = "#fff";
+const observer1 = new IntersectionObserver(
+  (items) => {
+    items.forEach((item) => {
+      if (item.isIntersecting) {
+        if (item.target.className.includes("client-feedback-section")) {
+          clientFeedbackIndicatorButton.style.background = "#fff";
+        }
+      } else {
+        clientFeedbackIndicatorButton.style.background = "transparent";
       }
-    } else {
-      clientFeedbackIndicatorButton.style.background = "transparent";
-    }
-  });
-});
+    });
+  },
+  {
+    threshold: 0.5,
+  }
+);
 
 observer1.observe(clientFeedbackSection);
 
@@ -36,18 +41,24 @@ const footerIndicatorButton = document.querySelector(
   ".footer-indicator-button"
 );
 
-const observer2 = new IntersectionObserver((items) => {
-  items.forEach((item) => {
-    if (item.isIntersecting) {
-      if (item.target.className.includes("footer-section")) {
-        resetIndicatorButtonStyle()
-        footerIndicatorButton.style.background = "#fff";
+const observer2 = new IntersectionObserver(
+  (items) => {
+    items.forEach((item) => {
+      if (item.isIntersecting) {
+        if (item.target.className.includes("footer-section")) {
+          resetIndicatorButtonStyle();
+          footerIndicatorButton.style.background = "#fff";
+        }
+      } else {
+        resetIndicatorButtonStyle();
+        footerIndicatorButton.style.background = "transparent";
       }
-    } else {
-      footerIndicatorButton.style.background = "transparent";
-    }
-  });
-});
+    });
+  },
+  {
+    threshold: 0.5,
+  }
+);
 
 observer2.observe(footerSection);
 
