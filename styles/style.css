@@ -170,7 +170,7 @@ body {
 .side-indicator-container {
     position: fixed;
     top: 50%;
-    right: 0;
+    right: 2%;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -185,7 +185,11 @@ body {
     border: 3px solid #e6e6e6;
     border-radius: 50%;
     background: transparent;
-    
+    cursor: pointer;
+}
+
+.side-indicator-button:hover {
+    background-color: #fff;
 }
 
 @media (max-width: 576px) {
