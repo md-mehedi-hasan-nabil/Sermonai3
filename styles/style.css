@@ -26,7 +26,7 @@ body {
 .hero {
     position: relative;
     background-color: rgb(6, 21, 81, 0.7);
-    margin-top: -5px;
+    margin-top: 5rem;
 }
 
 .hero-video {
