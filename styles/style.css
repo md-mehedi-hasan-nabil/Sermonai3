@@ -12,6 +12,7 @@ body {
 .bg-blue {
     background-color: #061551;
     color: #fff !important;
+    fill: #fff !important;
 }
 
 .text-blue {
@@ -119,8 +120,10 @@ body {
     background-image: url(../assets/footer-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: inset 0 0 0 2000px rgb(6, 21, 81, 0.85);
+    background-position: center;
+    box-shadow: inset 0 0 0 2000px rgb(6, 21, 81, 0.8);
     background-attachment: fixed;
+
 }
 
 .scroll-to-top {
@@ -160,6 +163,10 @@ body {
     margin-top: -20rem
 }
 
+.absolute-svg-icon {
+    opacity: 1;
+}
+
 
 @media (max-width: 576px) {
     .service-content {
@@ -174,6 +181,10 @@ body {
 
     .client-feedback-message {
         height: auto;
+    }
+
+    .absolute-svg-icon {
+        opacity: 0;
     }
 
 }
