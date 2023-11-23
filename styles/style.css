@@ -137,8 +137,23 @@ body {
 }
 
 .client-feedback-message {
-    height: 14rem;
-    /* background-color: red; */
+    min-height: 18rem;
+
+}
+
+.client-feedback-message-bg-1 {
+    background-image: url(../assets/client-feedback-message-1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.client-feedback-message-bg-2 {
+    background-image: url(../assets/client-feedback-message-bg-2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
